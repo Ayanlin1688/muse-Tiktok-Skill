@@ -1,8 +1,11 @@
 ---
 name: muse-video-prompt-skill
-version: 6.2.0-ecommerce-consistency
+version: 7.0.1
+author: Ayanlin1688
+source: https://github.com/Ayanlin1688/muse-Tiktok-Skill
+license: MIT (attribution required — retain copyright notice and source)
 description: |
-  Muse 内置视频（Muse Video）全类目电商带货提示词工厂 · v6.2 一致性与实拍质感融合版。
+  Muse 内置视频（Muse Video）全类目电商带货提示词工厂 · v7.0 一致性与实拍质感版。
   只产「可直接粘贴的爆款提示词脚本」，生成由用户自己的工具完成。
   核心能力：
   ① 双锁一致性契约（Character & Product Contract）：产品结构不变量 + 唯一文字白名单 + 人物身份/发饰/衣着全程锁定，根治「产品图与视频不一致」与「人物中途变脸丢配饰」。
@@ -10,11 +13,11 @@ description: |
   ③ 三层动作安全分级（Tier1 微动 / Tier2 单一受控动作 / Tier3 高危连续拆装封杀）：根治穿模、第三只手、瓶盖丢失与产品变形。
   ④ 双平台物理级硬隔离：TikTok 美区纯英文 + 地道美式英语/美西语口播；抖音纯中文 + 普通话/地方方言口播，严禁串台。
   ⑤ 零违规防火墙：禁一切价格、尺寸数字、夸大极限词、医疗功效词；内置 TikTok Shop 货不对板（Mismatch/SNAD）扣分红线防御。
-  ⑥ 22 项硬检清单 + 确定性校验脚本 bin/validate_ecommerce_prompt.py 自动拦截。
+  ⑥ 24 项交付闸门 + 确定性校验脚本 bin/validate_ecommerce_prompt.py 自动拦截。
   Use when asked to Muse提示词、电商带货提示词、全类目实拍脚本、Muse电商、产品一致性、人物一致性、Muse防违规、Muse带货脚本。
 ---
 
-# Muse 提示词工厂 · v6.2 全类目电商一致性与实拍质感版
+# Muse 提示词工厂 · v7.0 全类目电商一致性与实拍质感版
 
 ## 定位
 只产**电商带货提示词**。核心目标三件事：**产品 1:1 一致、人物全程一致、画面像真机实拍**。
@@ -55,7 +58,7 @@ description: |
 1. **看图识品**：读参考图/视频，提取产品物理不变量与部件白名单，判定 T1–T5 档位。
 2. **平台路由**：按用户指定平台套入对应语言、人设、场景与合规红线。
 3. **装配模板**：合入光学底座 + 人物契约 + 三层动作 + 0.0s 起声锁 + 黄金 3 秒钩子（见 `references/prompt-template.md`）。
-4. **过 22 项硬检**：逐项自检，并运行 `bin/validate_ecommerce_prompt.py` 做确定性拦截。
+4. **过 24 项交付闸门**：逐项自检，并运行 `bin/validate_ecommerce_prompt.py` 做确定性拦截。
 5. **交付**：按四块结构输出，不擅自润色用户定稿。
 
 ## 文件地图
@@ -64,7 +67,7 @@ description: |
 |---|---|
 | ★ 全类目一致性协议 + 实拍蒸馏模型 + T1–T5 槽位 | `references/ecommerce-universal-engine.md` |
 | ★ 双平台硬隔离矩阵 + 爆款 0–3s 钩子库 + 违规红线 | `references/douyin-vs-tiktok-rules.md` |
-| ★ 六段式模板 + 22 项硬检 + 失败改法 | `references/prompt-template.md` |
+| ★ 5L 装配结构 + 24 项交付闸门 + 失败改法 | `references/prompt-template.md` |
 | 我的默认项全表 | `references/personal-defaults.md` |
 | 四档对白写法 | `references/dialogue.md` |
 | 人物一致性写法 | `references/consistency.md` |
@@ -73,5 +76,5 @@ description: |
 
 ## 相关技能
 - `seedance-2-5-video-director`：复杂镜头与长片结构。
-- `minimax-h3-tiktok-ecommerce`：H3 铁律体系（本版本已融合其只手任务守恒与去蜡人化思路）。
+- `minimax-h3-tiktok-ecommerce`：H3 铁律体系，可与本 skill 的正向实拍模型互补使用。
 - `character-refs`：真人参考图生成。

@@ -1,94 +1,147 @@
-# 六段式电商实拍提示词模板 · 22 项硬检 · 失败改法（v6.2）
+# 5L 提示词装配结构 · 24 项交付闸门
 
-> 所有电商带货提示词严格按本模板装配。**正向段禁止出现 `no / not / never / without`**（全部禁止项集中放到末尾 `Restrictions / Negative Lock` 区）。
+> 本文件是提示词装配车间。所有电商视频提示词按 **L1→L5 五层** 自上而下装配，每层只解决一类问题，层与层之间不重叠。
+> 正向段只写「会发生什么」，禁止项全部集中在 L5，避免语义打架。
 
 ---
 
-## 一、TikTok Shop 美区 · 英文爆款实拍模板（10s 单段 / 双段接续）
+## 一、5L 五层结构总览
+
+| 层 | 名称 | 解决什么 | 缺了会怎样 |
+|---|---|---|---|
+| **L1** | 帧基 Frame Base | 画幅、时长、原生色彩基底 | 画幅错、色调假、时长被压缩 |
+| **L2** | 主体锁 Subject Lock | 产品不变量 + 人物契约 | 产品变形、人物变脸、配件消失 |
+| **L3** | 场域 Set Field | 环境、光源、静态杂物 | 背景被 AI 清空、光位不真实 |
+| **L4** | 演进 Beat Flow | 0–10 秒三段动作 + 镜头 + 声音 | 动作僵、穿模、无钩子 |
+| **L5** | 闸门 Gate | 限制清单 + 合规声明 | 违规词、乱码文字、平台扣分 |
+
+---
+
+## 二、中文装配模板（抖音 / 中文提示词直用）
 
 ```text
-[Platform Isolation] TikTok Shop US Market ONLY — 100% English prompt and Native American English (or specified US Spanish) voiceover. Zero Chinese characters or Chinese presenter cues.
+【L1 帧基】9:16 竖屏，约 10 秒。Apple iPhone 17 Pro Max 主摄原生直出，bt709 手机色彩，深景深全画面清晰，保留自然自动曝光：窗外日光轻微过曝、室内暗部带细微传感器颗粒，单手举机有轻微呼吸晃动与手腕移动时的动态微糊。
 
-[Duration & Aspect] Vertical 9:16, ~10s raw handheld UGC product video.
+【L2 主体锁 · 产品】全片仅此一件。物理不变量：{材质与透光性}、{几何形状与比例}、{颜色分区}、{部件白名单}、{相对手掌的占比}。{产品自带标识} 全程正面朝向镜头、静止不变形。
 
-[Camera & Color Science - Distilled iPhone 17 Pro Max Real-Shot]
-Shot handheld on an Apple iPhone 17 Pro Max main wide camera (24mm, vertical 9:16, native bt709 color profile), unedited social-media real-shot footage. Deep focus with natural smartphone auto-exposure (window daylight slightly bright outside, warm-neutral indoor shadows with faint sensor grain, zero beauty filter, zero studio rim light, zero artificial sharpening). Subtle single-arm handheld breathing drift and slight natural motion softness during wrist movement.
+【L2 主体锁 · 人物】{年龄性别外貌}、{发型 + 固定发饰}、{固定耳饰}、{上衣下装纹理}、{穿戴物}，以上全程保持原位。神态只做自然松弛的日常微表情，保留真实毛孔与零碎细发。
 
-[1:1 Product Appearance Freeze & Whitelist Lock]
-Strict 1:1 visual match to the uploaded reference photo. Product category & scale: [T1-T5 tier and relative hand-held proportion, ZERO numeric dimensions]. Physical invariants: [Exact shape, material, color zones, cap/closure/edges]. Text/Logo Lock: [Exact printed label wording kept facing forward and stationary, e.g., "VOYAGE NILLA" over "QAWAFT" on the brown rectangular front label, OR "all promotional text banners removed"]. Whitelist: ONLY components visible in the reference photo exist.
+【L3 场域】{真实家庭/车内场景}，{主光源 + 辅光源及其冷暖关系}，周围有 {4–6 件静止日常杂物}，全程不动。
 
-[Character Contract & Wardrobe Lock]
-[Exact person description matching reference or US local creator archetype]. Fixed wardrobe & hair accessories that stay unchanged throughout: [e.g., tortoiseshell claw clip holding messy blonde updo, small gold hoop earrings, cream cable-knit cardigan over white ribbed tank top, burgundy seatbelt]. Facial discipline: calm, natural conversational micro-expressions—gentle brow movement, natural blinking, relaxed half-smile; zero exaggerated shocked eyes or wide frozen grin; natural skin pores and light freckles visible.
+【L4 演进】
+  0–3 秒（钩子）：动作已在进行中——{具体的持握或操作动作}。从 0.0 秒起有真实环境底噪，人物自然开口说第一句大白话（≤10 字）："{个人体验开场白}"
+  3–7 秒（实证）：只做一个克制的验证动作——{单一动作}。自然接下一句："{卖点感受}"
+  7–10 秒（收束）：{顺手放下的生活化动作}，在动作中间自然结束，不做摆拍或推销手势。
 
-[Real US Domestic / Car Setting]
-[Authentic US environment matching reference, e.g., inside a parked car driver/passenger seat with a paper coffee cup in the lower console, trees and parking lot visible through the side window, OR cluttered US living room/vanity with 5-6 static everyday items].
-
-[0-10s Timed Beats · Audio-Onset & Safe Three-Tier Motion]
-  0-3s (0.0s Audio-Onset + Hook): Starts mid-action with product already steady in frame; [single-hand safe hold keeping label clear, e.g., right hand holds the lower half of the bottle with fingers below the label, never twisting or removing the cap]. Continuous low-level cabin/room tone from 0.0s. She speaks casually to camera in natural American English (with natural breath/pause): "[Short ≤8-word personal-experience hook line]"
-  3-7s (Controlled Proof Beat): [Tier-2 single controlled action: e.g., gently tilts the bottle a fraction so daylight glints across the amber glass while her left index finger lightly taps the brass spherical cap once, keeping the front label upright and legible]. She continues smoothly: "[Short natural proof line, zero exaggerated claims]"
-  7-10s (Slice-of-Life Ending): Action trails off naturally mid-thought—she glances briefly down at the bottle in her hand with a relaxed nod as the clip ends cleanly without a stiff pose or CTA gesture.
-
-[Listing Compliance Note]
-Visual proportions, colors, and physical features strictly reflect the linked TikTok Shop listing; zero numeric size/price claims.
-
-[Restrictions / Negative Lock]
-(Put all forbidden items here ONLY)
-extra hands, third hand, mutated fingers, clipped fingers, hands overlapping label, removing or losing the cap, bottle morphing, distorted label text, garbled letters, changing product color or pattern, invented ornaments or extra flowers, exaggerated wide-eyed shock, frozen toothy grin, beauty-filter waxy skin, studio bokeh, cinematic color grading, on-screen captions, subtitles, price tags, numeric size labels.
+【L5 闸门】
+一致性声明：产品比例、颜色、结构、材质严格对应后台商品详情页。
+限制清单：不要第三只手、不要多余手指、不要手指遮挡或穿过产品、不要改变产品颜色或结构、不要产品文字乱码、不要夸张表情或磨皮脸、不要单反虚化、不要自动生成字幕或价签、不要出现任何数字尺寸或价格。
 ```
 
 ---
 
-## 二、中国抖音电商 · 中文爆款实拍模板（10s 单段）
+## 三、英文装配模板（TikTok 美区直用）
 
 ```text
-[平台物理隔离] 仅限中国抖音电商 —— 100% 纯中文提示词与标准普通话（或指定地方方言）口播。严禁混入英文口播或欧美人物特征。
+[L1 Frame Base] Vertical 9:16, ~10s. Shot handheld on an Apple iPhone 17 Pro Max main wide camera, native bt709 color profile, deep focus with natural phone auto-exposure (bright window light clips slightly, indoor shadows carry faint sensor grain), subtle single-arm drift and slight motion softness on wrist movement.
 
-[时长与画幅] 9:16 竖屏，约 10 秒，真实手机原生直出带货短视频。
+[L2 Subject Lock · Product] Exactly one unit. Physical invariants held for the whole clip: {material and translucency}, {geometry and proportions}, {color zones}, {component whitelist}, {size relative to one hand}. {Product label} faces the camera lens the entire time, upright and legible.
 
-[摄影机与色彩 · Apple iPhone 17 Pro Max 实拍蒸馏模型]
-使用 Apple iPhone 17 Pro Max 原生相机（24mm 主摄，9:16 竖屏，bt709 手机直出自然色彩），零美颜零滤镜无商业调色。深景深全画面清晰，保留真实手机自动曝光特征（窗外或顶灯高光轻微过曝，面部暗部保留真实肤质纹理与细微传感器底噪，拒绝 AI 过度锐化与塑料磨皮）。单手举机拍摄的轻微呼吸晃动与手腕移动时的自然动态微糊。
+[L2 Subject Lock · Person] {Age, look}, {hair with the same fixed clip}, {fixed earrings}, {top and bottom with fabric texture}, {worn accessory}, all holding their position throughout. Calm conversational micro-expressions only, with real pores and fine flyaway hair.
 
-[1:1 产品外观冻结与白名单锁]
-严格 1:1 匹配上传的参考图产品：全片仅此一件，外观、颜色分区、材质纹理与比例完全冻结不变（使用相对手掌或家居物体的自然比例，严禁任何尺寸数字）。[逐一点名参考图物理结构与唯一合法配件白名单；产品自带标识保持正面朝向镜头、静止稳定不变形，主图促销文字一律排除]。
+[L3 Set Field] {Authentic US car / home setting}, {key light plus fill light and their color temperature relationship}, plus {4–6 static everyday props} that stay still the whole clip.
 
-[人物契约与穿搭锁定]
-[本土真人画像，穿日常家居/通勤衣物，固定发型发饰与衣物细节全程不变]。面部与神态纪律：自然松弛的日常聊天神态，轻微眨眼与自然口型，拒绝夸张瞪眼或僵硬露齿假笑；保留真实鼻翼纹理与零碎细发。
+[L4 Beat Flow]
+  0–3s (Hook): Action already underway — {specific hold or interaction}. Continuous low room tone from 0.0 seconds. She speaks casually to camera in natural American English after a real breath: "{short hook line}"
+  3–7s (Proof): One restrained verification action only — {single action}. She continues smoothly: "{short proof line}"
+  7–10s (Landing): {casual put-down gesture} and the clip ends mid-gesture, without a posed smile or call to action.
 
-[中国真实居家/车内环境]
-[如中国家庭客厅窗边自然光桌面/沙发角，或国内私家车副驾，周围保留 5-6 件静止日常杂物如水杯、纸巾盒、抱枕、充电线，全程静止不动]。
-
-[0-10秒分拍物理节拍 · 0秒起声与安全三级动作]
-  0-3秒（0秒起声 + 黄金钩子）：画面一开场动作已在进行，产品稳稳入画且正面朝向镜头；[单手安全持握或单指接触操作，严禁高危拆盖旋转]。从 0.0 秒起保留真实室内环境底噪，人物自然开口说第一句接地气大白话（≤10 字）："[个人真实体验开场白，无极限词]"
-  3-7秒（受控细节验证）：[仅做 1 个幅度克制的物理验证动作，如手指轻按产品回弹、或微倾角度展示真实材质光影，不遮挡正面结构]。自然接下一句："[大白话卖点感受]"
-  7-10秒（自然生活切片落点）：人物顺手把产品摆正或垂眼看一眼手里物件，在真实生活感中自然收尾，不做硬推销手势。
-
-[硬性限制清单 / Negative Lock]
-不要第三只手、不要多余手指或穿模、不要擅自拆开或丢失产品部件、不要改变产品花纹颜色或结构比例、不要产品文字乱码、不要夸张假笑或塑料磨皮脸、不要单反背景虚化、不要自动生成屏幕字幕/价签/角标、不要出现任何数字尺寸或极限违禁词。
+[L5 Gate]
+Listing note: Proportions, color, closures and materials strictly reflect the linked TikTok Shop listing.
+Restrictions: extra hands, third hand, mutated or clipped fingers, fingers covering or passing through the product, product morphing or color change, distorted label text, exaggerated or frozen facial expressions, waxy smoothed skin, studio lighting, bokeh, cinematic grading, generated captions or price tags, numeric size labels.
 ```
 
 ---
 
-## 三、22 项硬检清单（生成后必过 `bin/validate_ecommerce_prompt.py`）
+## 四、三层变体（按视频形态选一层套用）
 
-1. **市场物理隔离**：美区无中文、抖音无英文口播，人设/场景与平台一致。
-2. **外观冻结锁**：写清参考图材质、颜色分区、形状与部件白名单。
-3. **文字/Logo 防乱码**：标签朝向写死，或明确排除主图促销大字。
-4. **防拆装变形**：10 秒单段内不做“拆盖+喷洒+盖回”的高危连续动作。
-5. **人物契约**：发饰（抓夹等）、耳环、衣着纹理全程锁定。
-6. **表情去假人**：禁止夸张大笑/惊恐瞪眼，锁死克制自然微表情。
-7. **iPhone 17 Pro Max 光学底座**：含 `bt709`、深景深、自然过曝、微小动态糊。
-8. **0.0s 起声锁**：写明从 0 秒起有环境底噪与第一句口语，停顿无数字静音。
-9. **只手任务守恒**：最多 2 个手部接触点，单手操作小件、不挡标签。
-10. **黄金 3 秒钩子**：0–3s 动作已在进行（H1–H4）。
-11. **生活切片结尾**：在自然动作中结束，无强推销手势。
-12. **零数字尺寸**：全篇无 `cm / inch / " / ft / mm / ml / oz / pcs`。
-13. **零价格**：全篇无 `$ / ￥ / 元 / 折 / off / price`。
-14. **零夸大极限词**：无 `best / #1 / perfect / guaranteed / 最好 / 第一 / 100%`。
-15. **零医疗功效词**：无 `cures / prevents / 修复 / 治疗 / 零甲醛`。
-16. **零抽象摄影词**：无 `cinematic / bokeh / 8k / masterpiece / 电影感`。
-17. **正向段零否定词**：美区/英文正向描述段不写 `no / not / never / without`（全归入末尾 `Restrictions / Negative Lock`）。
-18. **静态杂物背景**：列 4–6 件不移动的真实生活背景物。
-19. **相对比例参照**：产品大小用人手或家居参照物表示。
-20. **台词词数合规**：10 秒内英文 ≤25 词、中文 ≤35 字，单句短促。
-21. **画幅与单段时长**：明确 `9:16` 与 `~10s`（超过 10 秒必须分段）。
-22. **Listing 合规声明**：美区必带 Listing 一致性声明。
+### 变体 A：第一人称 POV 生活流
+- 在 L1 之后立刻插入强约束，**单独成行**：
+  `全程严格第一人称：镜头就是{男友/朋友}的眼睛，本人不入镜，只允许手或前臂偶尔出现在画面边缘。`
+- 约束必须写成强约束。弱约束（"尽量不出现"）会被忽略，实测中肩膀大面积入镜。
+- L4 的三个节拍改为「手部动作 + 环境反应」，不写人脸。
+
+### 变体 B：口播 talking-head
+- L2 人物层额外写：`正对镜头、视线看镜头；非自拍，画面中不出现相机或手机。`
+- L4 台词注明语气与口型：`（声音与画面同步，口型与台词对齐，无文字叠加）`
+- 单句 ≤12 字；说话时去掉大幅动作，否则口型必崩。
+
+### 变体 C：多段长片（总时长 >10 秒）
+- 拆成多条独立提示词，**每条只覆盖自己那一段的 0–10 秒**。
+- 每条第一行固定声明：
+  `本段为 {N} 秒视频的第 {K} 段（{X}–{Y} 秒），延续同一人物、场景、光线与质感，人物服装发型面容严格一致。`
+- L2 主体锁整段**逐字复制**，一个字都不改。
+- L5 闸门每条都要重写，不写"同上"。
+- 交付附一张拆段表（段号 / 覆盖秒数 / 镜头数 / 本段任务）。
+
+---
+
+## 五、24 项交付闸门（逐项打钩，缺一项不交）
+
+### A 组 · 帧基（L1）
+1. 首行有画幅 + 时长
+2. 写明 iPhone 17 Pro Max 原生直出与 bt709
+3. 写明深景深与自然自动曝光特征
+4. 写明手持轻微晃动与动态微糊
+5. 没有出现 cinematic / bokeh / 8k / 电影感
+
+### B 组 · 产品锁（L2）
+6. 五项物理不变量全部写全
+7. 部件白名单逐一点名，没有 "各种配件" 这类概括词
+8. 产品自带标识写清朝向，或明确排除主图促销大字
+9. 全片只有一件产品的声明
+10. 产品大小用人体或家居比例参照，无任何数字尺寸
+
+### C 组 · 人物锁（L2）
+11. 发饰、耳饰、衣着、穿戴物逐项点名并声明不动
+12. 神态限定为自然微表情，禁夸张表情
+13. 保留真实毛孔与零碎细发
+
+### D 组 · 场域（L3）
+14. 场景对应目标市场（美区美式 / 抖音中式）
+15. 写明主辅光源与冷暖关系
+16. 列出 4–6 件静止杂物
+17. 声明杂物全程不动
+
+### E 组 · 演进（L4）
+18. 0–3 秒动作已在进行中
+19. 每段最多一个主要动作
+20. 手部接触点 ≤2，单手操作小件
+21. 台词词数合规（英文 ≤25 词 / 中文 ≤35 字），单句短促
+22. 结尾在动作中间自然结束
+
+### F 组 · 闸门（L5）
+23. 价格、尺寸数字、夸大词、医疗功效词全部为零
+24. 美区带 Listing 一致性声明；正文无跨市场语言混用
+
+> 机械项交 `bin/validate_ecommerce_prompt.py` 跑一遍，零错误再交付。
+
+---
+
+## 六、现象 → 改法速查
+
+| 你看到的现象 | 改哪一层 | 具体改法 |
+|---|---|---|
+| 产品形状或花纹变了 | L2 产品锁 | 把物理不变量补到能画出来的粒度；加刚体声明 |
+| 产品标签乱码或被转走 | L2 产品锁 | 写死标签朝向与"静止可读" |
+| 人物中途换脸 | L2 人物锁 | 人物段整段复制；多段片逐字一致 |
+| 配饰（抓夹/耳环）中途消失 | L2 人物锁 | 逐项点名并声明"全程保持原位" |
+| 表情夸张、脸发胖、塑料牙 | L2 人物锁 | 限定为自然微表情；把夸张表情写进 L5 |
+| 出现第三只手 / 手指粘连 | L4 演进 | 手部接触点降到 ≤2；单手操作；明确哪只手做什么 |
+| 产品部件丢失（如瓶盖） | L4 演进 | 拆掉高危连续动作，改成单一静止展示 |
+| 动作中间出现半透明残影 | L4 演进 | 每段只留一个运动主体 |
+| 背景被清得干干净净 | L3 场域 | 补 4–6 件静止杂物声明 |
+| 画面色彩发灰发假 | L1 帧基 | 补 bt709 与自然过曝描述 |
+| 画面过度锐利、像渲染 | L1 帧基 | 补"轻微动态微糊" |
+| 单条被压成 10 秒 | 结构 | 拆成多段，单条不写长轴 |
+| 出现 AI 自造字幕或价签 | L5 闸门 | 限制清单点名禁止 |

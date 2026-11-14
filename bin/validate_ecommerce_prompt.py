@@ -62,8 +62,12 @@ CAMERA_PARAM_WHITELIST = [
 
 def split_positive_and_negative(text: str):
     markers = [
+        "【L5",
+        "[L5",
         "[Restrictions",
         "Restrictions:",
+        "限制清单：",
+        "限制清单:",
         "[硬性限制清单",
         "硬性限制清单",
         "Negative Lock",

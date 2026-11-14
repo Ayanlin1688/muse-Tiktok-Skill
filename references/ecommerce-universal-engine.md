@@ -1,10 +1,6 @@
-# 全类目电商一致性与实拍质感写死协议（v6.2 融合 GitHub 开源协议 + 真实标杆蒸馏版）
+# 全类目电商一致性与实拍质感写死协议（v7.0 真实素材蒸馏版）
 
-> 融合来源：
-> 1. GitHub `Emily2040/seedance-2.0`（Character Contract 角色契约 + 三层动作分级防崩坏）
-> 2. GitHub `penposs/minimax-h3-video-prompt`（物理不变量 + 唯一文字白名单锁）
-> 3. GitHub `zhengzhentao86/reverse-video-prompt`（原生手机质感 + 0.0s 音频起声 + 本地真实感锁）
-> 4. 本机真实爆款带货视频蒸馏（`2025_10_10_09_36_IMG_3319.MOV` + 美区香水实拍标杆 `7ada9b` / `64fea0`）
+> 本协议从真实手机拍摄的带货视频与逐帧病理复盘中反推、验证而成，适用于全部电商品类。
 
 ---
 

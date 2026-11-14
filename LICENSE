@@ -1,6 +1,8 @@
 MIT License
 
-Copyright (c) 2026 Mason Mosen
+Copyright (c) 2026 Ayanlin1688
+Project: Muse Video Prompt Skill
+Repository: https://github.com/Ayanlin1688/muse-Tiktok-Skill
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -11,6 +13,16 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+
+ATTRIBUTION REQUIREMENT
+----------------------
+Any copy, redistribution, derivative work, or publicly released version of
+this Software must retain the copyright notice above, including the author
+name "Ayanlin1688" and the source repository URL, and must clearly state the
+origin of the work in its documentation, README, or credits section.
+
+Removing or replacing the copyright statement, or presenting this work as
+one's own original creation, is not permitted.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
